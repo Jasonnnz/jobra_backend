@@ -5,7 +5,6 @@ class CreateCards < ActiveRecord::Migration[6.0]
       t.string :title
       t.string :status
       t.string :description
-      t.date :date_applied
 
       t.timestamps
     end

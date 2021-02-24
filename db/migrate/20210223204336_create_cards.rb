@@ -3,7 +3,7 @@ class CreateCards < ActiveRecord::Migration[6.0]
     create_table :cards do |t|
       t.integer :user_id
       t.string :title
-      t.string :status
+      t.string :label
       t.string :description
 
       t.timestamps

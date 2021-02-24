@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 2021_02_23_204336) do
   create_table "cards", force: :cascade do |t|
     t.integer "user_id"
     t.string "title"
-    t.string "status"
+    t.string "label"
     t.string "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

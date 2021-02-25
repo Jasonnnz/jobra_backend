@@ -23,7 +23,7 @@ class CardsController < ApplicationController
     def update
         @card = Card.find(params[:id])
         @card.update(card_params)
-        render json: @card.user
+        render json: @card.user #get rid of this if you want to make rendering faster
     end
 
     def edit 

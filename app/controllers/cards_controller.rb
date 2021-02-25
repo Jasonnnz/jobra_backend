@@ -33,7 +33,7 @@ class CardsController < ApplicationController
 
     def destroy
         @card = Card.find(params[:id]).destroy
-        render json: {}
+        render json: @card.user #@card.user for bootleg way #{} normally
     end
 
     private 

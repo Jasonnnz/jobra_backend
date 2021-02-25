@@ -17,7 +17,7 @@ class CardsController < ApplicationController
 
     def create 
         @card = Card.create(card_params)
-        render json: @card
+        render json: @card.user
     end
 
     def update

@@ -8,10 +8,12 @@ class User < ApplicationRecord
         acceptedCards = allCards.select{|card| card.label == "Accepted"}.map{|c| CardSerializer.new(c)}
         appliedCards = allCards.select{|card| card.label == "Applied"}.map{|c| CardSerializer.new(c)}
         rejectedCards = allCards.select{|card| card.label == "Rejected"}.map{|c| CardSerializer.new(c)}
+        searchedCards = allCards.select{|card| card.label == "Searched"}.map{|c| CardSerializer.new(c)}
         [{id: "Interested", title: "Interested", cards: interestedCards},
         {id: "Applied", title: "Applied", cards: appliedCards},
         {id: "Accepted", title: "Accepted", cards: acceptedCards},
-        {id: "Rejected", title: "Rejected", cards: rejectedCards}]
+        {id: "Rejected", title: "Rejected", cards: rejectedCards},
+        {id: "Searched", title: "Searched", cards: searchedCards}]
     end
 
 end

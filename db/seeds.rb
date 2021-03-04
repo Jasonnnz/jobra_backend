@@ -1,5 +1,5 @@
 User.create(name: "jason", email: "jason@gmail.com", password: "abc123")
-Note.create(user_id: 1, description: "Test Note")
+Note.create(user_id: 1, description: "Test Note", color: "blue")
 Card.create(title: "Google - SWE", label: "Interested", description: "in NY. 98-140k.", user_id: 1)
 Card.create(title: "Amazon - SWE", label: "Applied", description: "in WA. 70-200k.", user_id: 1)
 Card.create(title: "Uber - SWE", label: "Accepted", description: "in NY. 77-160k.", user_id: 1)

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :notes
   resources :cards
   
   post "/login", to: "users#login"

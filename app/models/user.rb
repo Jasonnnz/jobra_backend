@@ -1,5 +1,6 @@
 class User < ApplicationRecord
     has_many :cards
+    has_many :notes
     has_secure_password
 
     def lanes

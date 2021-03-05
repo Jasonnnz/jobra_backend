@@ -2,6 +2,9 @@ class User < ApplicationRecord
     has_many :cards
     has_many :notes
     has_secure_password
+    validates :email, presence: true
+    validates :email, uniqueness: true
+    validates :password, presence: true
 
     def lanes
         allCards = self.cards

@@ -2,6 +2,7 @@ class CardsController < ApplicationController
 
     def index
         @cards = Card.all
+        # MAILER HERE
         render json: @cards
     end
 

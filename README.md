@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Used Ruby v2.6.6. 
 
-Things you may want to cover:
+Please make sure to `bundle install` before firing up the server.
 
-* Ruby version
+To run server, `rails s`.
 
-* System dependencies
+This application uses ActionMailer and ActiveJob to send emails to every user weekly.
 
-* Configuration
+Utilizes BCrypt to salt and hash passwords and JWT to provide real authentication. 
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Ran on a PostgreSQL DB.
